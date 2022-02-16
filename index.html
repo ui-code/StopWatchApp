@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App | theuicode.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex justify-center h-screen items-center">
+    <div class="relative container overflow-hidden rounded-xl">
+        <div class="justify-between py-8 px-4 flex flex-row items-center">
+            <i class="fa-solid fa-chevron-left text-white"></i>
+            <span class="text-white font-semibold tracking-widest app-font-small">STOPWATCH</span>
+            <span></span>
+        </div>
+
+        <div class="flex flex-row justify-center">
+            <div class="outer-circle flex justify-center items-center">
+                <div class="absolute tick right"></div>
+                <div class="absolute tick left"></div>
+                <div class="absolute tick top"></div>
+                <div class="absolute tick bottom"></div>
+
+                <div class="inner-1 flex justify-center items-center">
+                    <div class="inner-2 flex justify-center items-center">
+                        <div class="inner-3 flex justify-center items-center">
+                            <div class="inner-4 flex justify-center items-center">
+                                <div class="w-2 h-2 bg-white rounded-full flex justify-center items-center">
+                                    <div class="absolute needle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center py-10 z-10 relative">
+            <span class="app-font-big font-bold text-white">12 : 16 . 34</span>
+        </div>
+
+        <div class="flex flex-row relative z-10 justify-around">
+            <button
+                class="app-color-blue bg-white rounded-3xl px-8 py-2 app-font-small font-bold app-shadow">RESET</button>
+            <button
+                class="app-color-blue app-bg-yellow rounded-3xl px-8 py-2 app-font-small font-bold app-shadow">START</button>
+        </div>
+
+        <div class="flex flex-row relative z-10 px-6 pt-10 justify-between">
+            <div class="flex flex-row h-10 w-10 bg-white rounded-full justify-center items-center app-shadow">
+                <i class="fa-solid fa-plus app-color-blue"></i>
+            </div>
+            <div class="flex flex-row pt-3">
+                <div class="flex flex-col w-16">
+                    <span class="app-font-small font-semibold text-white mb-4">Lap 1</span>
+                    <span class="app-font-small font-semibold text-white">Lap 2</span>
+                </div>
+                <div class="flex flex-col w-24 items-end">
+                    <span class="app-font-small font-semibold text-white mb-4">14:05:28</span>
+                    <span class="app-font-small font-semibold text-white">23:02:25</span>
+                </div>
+            </div>
+        </div>
+        <div class="slant-1"></div>
+        <div class="slant-2"></div>
+    </div>
+</body>
+
+</html>
